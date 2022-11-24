@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <form action="#" style="border: 1px solid black; width:500px; margin-right: 500px; margin: auto;" 
+    onsubmit="onsubmitbtn(event)">
+        <h3 style="color: rgb(38, 0, 255); text-align: center;">Expense Tracker</h3>
+        <hr style="margin:5px ;">
+    <label style="margin: 5px;" for="expenseamount">Choose expenseamount:</label>
+    <br>
+    <input type="number" id="expenseamount" name="expenseamount" required style="width: 470px; height: 20px; margin: 5px;">
+    <br>
+    <label for="description" style="margin: 5px;">Choose description:</label>
+    <br>
+    <input type="text" id="description" name="description" required style="width: 470px; height: 20px; margin: 5px;">
+    <br>
+    <label for="category" style="margin: 5px;">Choose a category:</label>
+    <br>
+    <select name="category" id="category"required style="width: 480px; height: 25px; margin: 5px;">
+        <option value="Please Select" ></option>
+        <option value="bike">Bike</option>
+        <option value="movie">Movie</option>
+        <option value="petrol">Petrol</option>
+    </select>
+  
+    <br>
+
+    <br><br>
+   <button style="width: 490px; background-color: rgb(36, 35, 33);border: none; height: 25px; margin: 5px; border-radius: 5%; color: aliceblue;" >Add Expense</button>
+</form>
+<ul id="parentnode"></ul>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.2.0/axios.min.js" integrity="sha512-QIsQNDM8hG/1Z3If8Zh2BcpQ79KL3ra1wVMVSliBjQfFMlWMA3tCSe6ZfTK9rw2Ag4hOQ4P5ZhQd4nQl2dMeog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="index.js"></script>
+</html>
